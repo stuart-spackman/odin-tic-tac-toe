@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dimension: 50vh;
+    --border: 3px solid white;
+    --border-radius: 12px;
+}
+
+.container {
+    margin-top: 25vh;
+    margin-left: auto;
+    margin-right: auto;
+    height: var(--dimension);
+    width: var(--dimension);
+
+    display: grid;
+    gap: 6px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.container div {
+    background-color: #6610f2;
+    border-radius: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 66px;
+}
+
+h2 {
+    margin-top: 13px;
+    text-align: center;
+}
+
+#loser {
+    background-color: #dc3545;
+}
+
+#winner {
+    background-color: #20c997;
+}
